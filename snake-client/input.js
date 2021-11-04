@@ -22,16 +22,20 @@ const handleUserInput = function (key) {
     process.exit();
   }
   else if (key == 'w'){
-    connection.write("Move: up")
+    connection.write("Move: up");
+    connection.write('Say: FTG K');
   }
   else if (key == 'a'){
-    connection.write("Move: left")
+    connection.write("Move: left");
+    connection.write('Say: Come on ');
   }
   else if (key == 's'){
     connection.write("Move: down")
+    connection.write('Say: GRRRT')
   }
   else if (key == 'd'){
     connection.write("Move: right")
+    connection.write('Say: Regent')
   }
 
 };
